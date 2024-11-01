@@ -44,7 +44,7 @@ securityContext:
 service:
   type: NodePort
   port: 80
-  nodePort: 30001
+  nodePort: 30011
 
 ingress:
   enabled: false
@@ -102,3 +102,5 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+message: hello world
