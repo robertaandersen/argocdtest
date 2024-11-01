@@ -12,7 +12,7 @@ http {
    server {
        listen 80;
        location / {
-           return 200 {{ .Values.message | quote }} - This pod is labled with {{ .Release.Name }}-{{ .Chart.Name }}-{{ .Chart.Version }} and is running on {{ .Values.nodePort }}.;
+           return 200 "{{ .Values.message }} - This pod is labled with {{ .Release.Name }}-{{ .Chart.Name }}-{{ .Chart.Version }} and is running on {{ .Values.nodePort }}.";
        }
    }
 }
