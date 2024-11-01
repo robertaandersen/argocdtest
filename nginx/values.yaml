@@ -44,7 +44,7 @@ securityContext:
 service:
   type: NodePort
   port: 80
-  nodePort: 30011
+  nodePort: 30000
 
 ingress:
   enabled: false
@@ -103,4 +103,4 @@ tolerations: []
 
 affinity: {}
 
-message: hello world
+message: hello my friend
